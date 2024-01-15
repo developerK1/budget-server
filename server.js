@@ -40,6 +40,10 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get((req, res)=>{
+	send("Hi there, this is working")
+})
+
 app.use('/transaction', transactionRoutes);
 
 
